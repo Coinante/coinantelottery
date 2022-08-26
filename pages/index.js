@@ -28,7 +28,7 @@ export default function Home() {
       ) : (
         <div
         className="py-1 px-1 font-bold text-1xl text-blue-700"
-        >Please connect to a Wallet</div>
+        >Please connect to a Wallet...</div>
       )}
     </div>
     </div>

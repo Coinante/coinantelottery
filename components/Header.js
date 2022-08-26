@@ -57,7 +57,7 @@ l11 -30 -100 0 c-91 0 -99 2 -99 19 0 11 14 31 31 45 35 30 92 35 126 11z"/>
      
 
 
-            <div className="ml-auto py-2 px-3">
+            <div className="ml-auto py-2 px-3 font-bold text-1xl text-blue-700">
                 
                 <ConnectButton moralisAuth={false}/>
             </div>

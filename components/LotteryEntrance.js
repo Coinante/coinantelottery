@@ -181,7 +181,7 @@ export default function LotteryEntrance() {
                     
                 </>
             ) : (
-                <div className="py-1 px-1 font-bold text-1xl text-red-700">Please connect to a supported chain </div>
+                <div className="py-1 px-1 font-bold text-1xl text-red-700">Please connect to a supported chain... </div>
             )}
         </div>
          </div>
