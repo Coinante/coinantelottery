@@ -10,13 +10,9 @@ export default function Home() {
   const { isWeb3Enabled, chainId } = useMoralis();
 
   return (
+    <div>
+       <Header  />
     <div className={styles.container}>
-      <Head>
-        <title>Coinante</title>
-        <meta name="Coinante" content="Lottery" />
-        
-      </Head>
-      <Header />
       {isWeb3Enabled ? (
         <div>
           {supportedChains.includes(parseInt(chainId).toString()) ? (
@@ -24,12 +20,17 @@ export default function Home() {
               <LotteryEntrance className="p-8" />
             </div>
           ) : (
-            <div>{`Please switch to a supported chainId. The supported Chain Ids are: ${supportedChains}`}</div>
+            <div 
+            className="py-1 px-1 font-bold text-1xl text-red-600"
+            >{`Please switch to a supported chainId. The supported Chain Id is: ${supportedChains}`}</div>
           )}
         </div>
       ) : (
-        <div>Please connect to a Wallet</div>
+        <div
+        className="py-1 px-1 font-bold text-1xl text-blue-700"
+        >Please connect to a Wallet</div>
       )}
+    </div>
     </div>
   );
 }
